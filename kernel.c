@@ -1,11 +1,10 @@
 #include <stdint.h>
 #include <stddef.h>
 
-
 #define MAX_COLS 80
 #define MAX_ROWS 25
 
-#define CURS_MIN 1
+#define CURS_MIN 0
 
 
 static inline uint16_t vga_entry(char);
@@ -75,7 +74,6 @@ void puts(char * str) {
 		putchar(*c);
 	putchar('\n');
 }
-
 
 void kernel_main(void) {
 	char * my_str = "abc";
