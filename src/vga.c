@@ -1,5 +1,7 @@
 #include <vga.h>
 
+uint16_t * vga = (uint16_t*)0xB8000;
+
 uint8_t curs_row = CURS_MIN;
 uint8_t curs_col = CURS_MIN;
 
